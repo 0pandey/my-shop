@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boss International Suits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Boss International Suits</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop Online</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="slider-container">
+      <!-- Slideshow Images -->
+      <div class="slide fade">
+        <img src="shop.jpg" alt="Shop Image 1">
+      </div>
+      <div class="slide fade">
+        <img src="shop1.jpg" alt="Shop Image 2">
+      </div>
+      <div class="slide fade">
+        <img src="shop2.jpg" alt="Shop Image 3">
+      </div>
+      <div class="slide fade">
+        <img src="shop3.jpg" alt="Shop Image 4">
+      </div>
+      <div class="slide fade">
+        <img src="shop4.jpg" alt="Shop Image 5">
+      </div>
+      <div class="slide fade">
+        <img src="shop5.jpg" alt="Shop Image 6">
+      </div>
+      <div class="slide fade">
+        <img src="shop6.jpg" alt="Shop Image 7">
+      </div>
+      <div class="slide fade">
+        <img src="shop7.jpg" alt="Shop Image 8">
+      </div>
+      <div class="slide fade">
+        <img src="shop8.jpg" alt="Shop Image 9">
+      </div>
+      <div class="slide fade">
+        <img src="shop9.jpg" alt="Shop Image 10">
+      </div>
+      <div class="slide fade">
+        <img src="shop10.jpg" alt="Shop Image 11">
+      </div>
+      <div class="slide fade">
+        <img src="shop11.jpg" alt="Shop Image 12">
+      </div>
+    </div>
+  
+    <div class="hero-text">
+      <h2>Tailored Suits, Elevated Style!</h2>
+      <p>**Confidence is tailor-made, just like our suits.**</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+  
+  
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="suit.jpg" alt="Classic Suit">
+          <h3>Jackets</h3>
+          <p>Price: 3,500 - 4,000 THB</p>
+          <button><a href="jacket-details.html">View Details</a></button>
+        </div>
+        
+        <div class="product-card">
+          <img src="shirt.jpg" alt="Modern Suit">
+          <h3>Shirts</h3>
+          <p>Price: 1,200 - 1,500 THB</p>
+          <button><a href="shirt-details.html">View Details</a></button>
+        </div>
+  
+        <div class="product-card">
+          <img src="pant5.jpg" alt="Premium Suit">
+          <h3>Trousers</h3>
+          <p>Price: 1,200 THB</p>
+          <button><a href="suit-pants-details.html">View Details</a></button>
+        </div>
+  
+        <div class="product-card">
+          <img src="vest6.jpg" alt="Luxury Suit">
+          <h3>Vest</h3>
+          <p>Price: 1,000 - 1,200 THB</p>
+          <button><a href="vest-details.html">View Details</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <section id="contact">
+        <p><b>Address:</b> 225/37 Boss International Suit Soi Long Beach Cha-am Hotel Phetchaburi Province 76120<a href="https://maps.app.goo.gl/XtnvcUAYNxj8Y1Pp7">  Map</a></p>
+        <p><b>โทร:</b> 081-713-3647<i>or</i> 099-210-1263</p>
+        <p><b>Email:</b> pandeyshyam188@gmail.com</p>
+      </section>
+      </form>
+    </div>
+  </section>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Boss International Suits. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
